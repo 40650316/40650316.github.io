@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cookbook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    
+
+   
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+		<li><img src="cookbook.png" height=30px width=30px top=10px></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+		   <li><a href="login.html">Login/Register</a></li>
+		   <li><a href="SubmitRecipe.html">Submit A Recipe</a></li>
+          <li><a href="about.html">About</a></li>
+		  <li>
+        <form>
+        <input type="text" placeholder="Search for a Recipe" onkeyup="search()" id="search-box"> </li>
+      </form>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Welcome to My Cookbook!</h2>
+        <p>This website is your one-stop-shop for all your your favorite Jamaican dishes. I hope you'll enjoy not just the content but also the meals</p>
+        <a href="recipes.html">Browse recipes &raquo;</a>
+      </section>
+      <section id="recipes">
+        <h2>Favourite Recipes</h2>
+        <ul class="recipesAll">
+
+          <li class="recipeItem" name="Jerk Chicken">		
+			      <img src="images\jerk-chicken.jpg" alt="Jerk Chicken">
+            <h3>Jerk Chicken</h3>
+			      <p>Jerk chicken is a classic Jamaican dish that is known for its spicy and smoky flavor. It's traditionally made with a marinade that includes scallions, thyme, allspice, and Scotch bonnet peppers.</p>	  
+            <a href="jerk-chicken.html">View recipe &raquo;</a>
+          </li>
+		  
+          <li class="recipeItem"  name="Curry Chicken">	
+		        <img src="images\curry-chicken.jpg" alt="Curry Chicken">
+            <h3>Curry Chicken</h3>
+            <p>A spicy and flavorful dish made with chicken, vegetables, and Indian spices.</p>
+            <a href="chicken-curry.html">View recipe &raquo;</a>
+          </li>
+
+		      <li class="recipeItem" name="Curry Goat">	
+		        <img src="images\curry-goat.jpg" alt="Curry Goat">
+            <h3>Curry Goat</h3>
+            <p>A spicy and flavorful dish made with goat, vegetables, and Indian spices.</p>
+            <a href="chicken-curry.html">View recipe &raquo;</a>
+          </li>
+
+          <li class="recipeItem" name="Ackee And Saltfish">	
+		        <img src="images\ackee-and-saltfish.jpg" alt="Ackee And Saltfish">
+            <h3>Ackee And Saltfish</h3>
+            <p>One of the favorite dishes on many Jamaican menu, made with Ackee , Salt (Cod) fish and seasonings</p>
+            <a href="ackee-and-saltfish.html">View recipe &raquo;</a>		
+		      </li>
+
+		      <li class="recipeItem" name="Rice And Peas">	
+		        <img src="images\rice-and-peas.jpg" alt="Rice And Peas">
+            <h3>Rice And Peas</h3>
+            <p>This is a must have with Chicken or any other meat kind. Made from white rice and red peas/beans</p>
+            <a href="rice-and-peas.html">View recipe &raquo;</a>			
+          </li>	
+		  
+          <li class="recipeItem" name="Pumpkin Rice">			  
+		        <img src="images\pumpkin-rice.jpg" alt="Pumpkin Rice">
+            <h3>Pumpkin Rice</h3>
+            <p>Delicious pumkin combined with white rice.</p>
+            <a href="rice-and-peas.html">View recipe &raquo;</a>
+          </li>
+		  
+		      <li class="recipeItem" name="Cocunut Rice">			  
+		        <img src="images\coconut-rice.jpg" alt="Coconut Rice">
+            <h3>Cocunut Rice</h3>
+            <p>Nice tasting Cocunut combined with white rice.</p>
+            <a href="coconut-rice.html">View recipe &raquo;</a>
+          </li>
+          
+        </ul>
+      </section>
+     
+    </main>
+    <footer>
+      <p>&copy; 2023 My Cookbook. All rights reserved.</p>
+    </footer>
+  </body>
+
+  <script src="recipes.js"></script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+     <nav>
+      <ul>
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+		   <li><a class="active" href="login.html">Login/Register</a></li>
+		   <li><a href="SubmitRecipe.html">Submit A Recipe</a></li>
+          <li><a href="about.html">About</a></li>
+		  <li><input text="search" placeholder=" Search for a Recipe">
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <ul>
+  <li>
+
+    <p>Please enter your login details below.</p>
+    <form action="login.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+	</li>
+	</ul>
+  </main>
+  <footer>
+    <p>&copy; 2023 Jamaican Recipes</p>
+  </footer>
+</body>
+</html>

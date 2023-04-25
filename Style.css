@@ -1,0 +1,176 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e5e5e5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #767373;
+
+
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+header li {
+	background-color: #767373;
+	 box-shadow: 0 0px 0px;
+	 left: 50;
+/*
+    
+     padding: 0px; 
+     border-radius: 5px; 
+     margin-bottom: 20px;
+	 */
+}
+header a{
+	color: #ffffff
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #0066cc;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ li {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 0;
+
+}
+
+/*
+.recipeItem 
+{
+  display: "";
+
+}
+*/
+
+
+footer {
+/*
+  background-color: #767373;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  
+ 
+    height:70px;
+    clear:both;
+    position:relative;
+    bottom:0;
+    width: 100%;
+ */
+
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+
+}
+#recipes img {
+	width: 100px;
+	height: 100px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.active {
+ /* background-color: #e5e5e5; */
+}

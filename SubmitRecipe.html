@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit a Recipe</title>
+	    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+
+ <header>
+ 	 <nav>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+		   <li><a href="login.html">Login/Register</a></li>
+		   <li><a href="SubmitRecipe.html">Submit A Recipe</a></li>
+          <li><a href="about.html">About</a></li>
+		  <li><input text="search" placeholder=" Search for a Recipe">
+        </ul>
+      </nav> 
+ </header>
+ 
+ <main>
+ <section>
+	<h1>Submit a Recipe</h1>
+	<form method="post" action="submit_recipe.php">
+		<label for="recipe_name">Recipe Name:</label>
+		<input type="text" id="recipe_name" name="recipe_name" required>
+
+		<label for="ingredients">Ingredients:</label>
+		<textarea id="ingredients" name="ingredients" required></textarea>
+
+		<label for="directions">Directions:</label>
+		<textarea id="directions" name="directions" required></textarea>
+
+		<label for="prep_time">Prep Time:</label>
+		<input type="text" id="prep_time" name="prep_time">
+
+		<label for="cook_time">Cook Time:</label>
+		<input type="text" id="cook_time" name="cook_time">
+
+		<label for="servings">Servings:</label>
+		<input type="number" id="servings" name="servings">
+
+		<label for="image">Image:</label>
+		<input type="file" id="image" name="image">
+
+		<input type="submit" value="Submit Recipe">
+	</form>
+	</section>
+ </main>
+</body>
+</html>
