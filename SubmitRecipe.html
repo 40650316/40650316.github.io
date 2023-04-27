@@ -9,37 +9,32 @@
 </head>
 <body>
 
- <header>
- 	 <nav>
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
-		   <li><a href="login.html">Login/Register</a></li>
-		   <li><a href="SubmitRecipe.html">Submit A Recipe</a></li>
-          <li><a href="about.html">About</a></li>
-		  <li><input text="search" placeholder=" Search for a Recipe">
-        </ul>
-      </nav> 
- </header>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  
+  <a href="login.html">Login/Register</a>
+  <a class="activeNav" href="SubmitRecipe.html">Submit A Recipe</a>
+  <a href="about.html">About</a>
+</div>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>My Jamaican Recipes</h1>
+<hr>
  
- <main>
- <section>
-	<h1>Submit a Recipe</h1>
+ <div class=container>	
+
 	<form method="post" action="submit_recipe.php">
 		<label for="recipe_name">Recipe Name:</label>
 		<input type="text" id="recipe_name" name="recipe_name" required>
 
 		<label for="ingredients">Ingredients:</label>
-		<textarea id="ingredients" name="ingredients" required></textarea>
+		<textarea id="ingredients" name="ingredients" rows="6" required></textarea>
 
 		<label for="directions">Directions:</label>
-		<textarea id="directions" name="directions" required></textarea>
-
-		<label for="prep_time">Prep Time:</label>
-		<input type="text" id="prep_time" name="prep_time">
-
-		<label for="cook_time">Cook Time:</label>
-		<input type="text" id="cook_time" name="cook_time">
+		<textarea id="directions" name="directions" rows="10" required></textarea>
 
 		<label for="servings">Servings:</label>
 		<input type="number" id="servings" name="servings">
@@ -49,7 +44,8 @@
 
 		<input type="submit" value="Submit Recipe">
 	</form>
-	</section>
- </main>
+</div>
+
+</div>
 </body>
 </html>
