@@ -5,7 +5,7 @@ function search()
     
 
     const searchbox = document.getElementById("search-box").value.toLowerCase();
-    const recipeItems = document.getElementById("recipesAll");
+    const recipeItems =  document.querySelectorAll(".category");
     const recipes = document.querySelectorAll(".recipeItem");
     const recipeName = document.getElementsByTagName("h4");
 	let searchResults = document.getElementById("sResults")
@@ -27,7 +27,7 @@ function search()
             if(textvalue.indexOf(searchbox) > -1)
             {
 				matchCount+=1;
-                recipes[i].style.display = "";
+                recipeItems[i].style.display = "block";
             //    alert(searchbox + "is in " + textvalue);
 			
             }
@@ -35,7 +35,7 @@ function search()
             {
 				
 				
-                recipes[i].style.display = "none";
+                recipeItems[i].style.display = "none";
               //  alert(searchbox + "is NOT in " + textvalue);
               //  alert(searchbox.value + "is in " + textvalue);
 			  //document.getElementsByClassName("main").innerHTML = "<div><h2> Sorry, No match Found!</h2></div>";
