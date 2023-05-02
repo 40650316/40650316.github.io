@@ -12,7 +12,9 @@ function search()
     var category = document.getElementsByClassName("btn active")[0].innerHTML;
    
    if( category.includes("all"))
+   {
        	category = "";
+   }
   
 
     let matchCount = 0;
