@@ -16,7 +16,7 @@ function search()
 
     let matchCount = 0;
 
-    for(var i=0; i < recipeName.length; i++)
+    for(var i=0; i < recipes.length; i++)
     {
         let match = recipes[i].getElementsByTagName('h4')[0]; //get the first h4 element, index[0]
 
