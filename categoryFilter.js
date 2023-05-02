@@ -7,6 +7,7 @@ function filterSelection(c) {
   for (i = 0; i < x.length; i++) {
     RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+	   search();
   }
 }
 
