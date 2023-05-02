@@ -8,7 +8,11 @@ function search()
     const recipeItems =  document.querySelectorAll(".category");
     const recipes = document.querySelectorAll(".recipeItem");
     const recipeName = document.getElementsByTagName("h4");
-	let searchResults = document.getElementById("sResults")
+	let searchResults = document.getElementById("sResults");
+    var category = document.getElementsByClassName("btn active")[0].innerHTML;
+   
+   if( category.includes("all"))
+    	category = "";
 
     let matchCount = 0;
 
@@ -24,7 +28,7 @@ function search()
             
           //  alert("textValue : " + textvalue);
             
-            if(textvalue.indexOf(searchbox) > -1)
+            if(textvalue.indexOf(searchbox) > -1  recipeItems[i].className.includes(category) )
             {
 				matchCount+=1;
                 recipeItems[i].style.display = "block";
