@@ -12,9 +12,8 @@ function search()
     var category = document.getElementsByClassName("btn active")[0].innerHTML;
    
    if( category.includes("all"))
-   {
-    	category = "";
-   }
+       	category = "";
+  
 
     let matchCount = 0;
 
@@ -30,7 +29,7 @@ function search()
             
           //  alert("textValue : " + textvalue);
             
-            if(textvalue.indexOf(searchbox) > -1  recipeItems[i].className.includes(category) )
+            if(textvalue.indexOf(searchbox) > -1 && recipeItems[i].className.includes(category) )
             {
 				matchCount+=1;
                 recipeItems[i].style.display = "block";
